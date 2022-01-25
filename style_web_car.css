@@ -1,0 +1,285 @@
+
+    /* khi chèn thêm đường link: boostrap.min.css thì trình duyệt mặc định thêm: "box-sizing: border-box" */
+    /* lúc này, trong % width đã có % padding. VD: width: 33% và padding 1%. nghĩa là trong 33% có 2% là padding (padding trái phải 1%) */
+    /* tuy nhiên margin thì nó sẽ không được tự động tính vào % của width, nó tính riêng. khi đó, chiều rộng của element = % width + % margin */
+
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        margin: 0;
+    }
+
+/*  CSS nav */
+    header {
+        background-color: rgb(26, 148, 255);
+        display: flex;
+        height: 60px;
+    }
+
+    header > div {
+        width: 70px;
+    }
+
+    header > div > img {
+        width: 124%;
+        padding: 4px 0 0 40px;
+    }
+
+    nav {
+        margin-left: auto;
+        /* width: 80%; */
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+
+    nav ul > li > a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        padding: 18px 40px;
+        display: block;
+    }
+
+    nav ul > li {
+        transition: all ease .5s;
+        overflow: hidden;
+    }
+
+    nav ul > li:hover {
+        background-color: darkblue;
+    }
+
+    nav ul > li:hover a {
+        transform: scale(1.1);
+        color: white
+    }
+
+    .content {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+/*  CSS QC */
+
+    section.ads > div {
+        position: fixed;
+        background: linear-gradient(lightblue, darkblue);
+        padding: 120px 32px;
+        border: 1px solid rgb(26, 148, 255);
+        border-radius: 12px;
+        animation: changeColor ease 4s infinite;
+        margin-top: 20px;
+    }
+
+    @keyframes changeColor {
+        0% {background: linear-gradient(lightgreen, rgb(97, 230, 97));}
+        40% {background: linear-gradient(lightyellow, yellow);}
+        80% {background: linear-gradient(lightgray, orange)}
+    }
+
+    section.ads > div > h4 {
+        font-size: 20px;
+    }
+
+    div.ads-left {
+        left: 10px
+    }
+
+    div.ads-right {
+        right: 10px
+    }
+
+/*  CSS content */
+    section.content {
+        margin-top: 20px;
+    }
+
+/*  CSS BANNER */
+    section.banner {
+        /* animation: changeColors 6s ease-in-out infinite; */
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    section.banner img {
+        /* visibility: hidden; */
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    div.carousel-inner {
+        border-radius: 10px;
+    }
+    
+    /* @keyframes changeColors {
+        0% {background-image: url(images/sale.png);}
+        30% {background-image: url(images/bear.png)}
+        70% {background-image: url(images/tet-holiday.png)}
+    } */
+
+    section.subject {
+        background-color: goldenrod;
+        margin-top: 20px;
+        width: 100%;
+        box-shadow: 0 2px 4px 1px rgb(230, 195, 1);
+    }
+
+    section.subject h1 {
+        text-align: center;
+        font-size: 40px;
+        padding: 20px;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 3px rgb(55, 55, 252);
+    }
+
+/*  CSS introduce */
+
+    section.introduce {
+        background-color: rgb(218, 242, 250);
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    h1.underline {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        font-size: 2.4vw;     
+    }
+
+    h1.underline::after {
+        content: "";
+        width: 20%;
+        height: 3px;
+        background-color: grey;
+        display: block;
+        margin: 6px auto;
+    }
+
+    section.introduce > p {
+        text-align: justify;
+        line-height: 30px;
+        margin-top: 30px;
+    }
+
+    div.items {
+        display: flex;
+    }
+
+    div.item {
+        width: 25%;
+        padding: 1%;
+    }
+
+    div.item > div {
+        background-color: rgb(252, 246, 192);
+        padding: 12px;
+        border: 2px solid goldenrod;
+        border-radius: 10px;
+    }
+
+/*  ... */
+    div.item > div > h4 {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        /* CSS thêm */
+        font-size: 1vw;
+        font-weight: bold;
+        padding-top: 10px
+    }    
+
+    div.item > div > p {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        /* CSS thêm */
+        overflow: hidden;
+        line-height: 24px;
+    }
+
+    div.item img {
+        width: 100%;
+    }
+
+/*  CSS product */
+
+    section.product {
+        background-color: rgb(218, 242, 250);
+        padding: 20px;
+    }
+
+    div.product-items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    div.product-item {
+        width: 32%;
+        padding: 1%;
+        margin: 0.66%;
+    }
+
+    div.product-img:hover {
+        overflow: hidden;
+        box-shadow: 0 4px 8px 4px rgb(192, 192, 192);
+    }
+
+    div.product-img {
+        overflow: hidden;
+        /* box-shadow: 0 2px 8px 4px rgb(199, 199, 199); */
+    }
+
+    div.product-item img {
+        width: 100%;
+        transition: transform ease 1s;
+    }
+
+    div.product-item img:hover {
+        transform: scale(1.4);
+        cursor: pointer;
+    }
+
+    /* CSS stats */
+    section.stats {
+        background-color: black;
+        color: white;
+        display: flex;
+        text-align: center;
+        margin: 30px 0;
+        padding: 10px 0;
+    }
+
+    div.stat {
+        width: 25%;
+    }
+
+    div.stat > h1 {
+        font-size: 30px;
+    }
+
+    div.stat > h4 {
+        font-size: 1vw;
+    }
+
+/* CSS video */
+
+    div.video {
+        display: flex;
+    }
+
+    div.video-item {
+        width: 33.3%;
+        padding: 1%;
+    }
+
+    div.video-item iframe {
+        width: 100%;
+    }

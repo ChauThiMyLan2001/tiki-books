@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>web car</title>
+            <link rel="stylesheet" href="style_web_car.css">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+            <link rel="icon" href="images/icon.png">
+        </head>
+        <body>
+            <header>
+                    <div class="logo">
+                        <img src="images/logo.png" alt="logo">
+                        <img src="images/freeship.png" alt="">
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Trang chủ</a></li>
+                            <li><a href="#">Giới thiệu</a></li>
+                            <li><a href="#">Dịch vụ sau bán hàng</a></li>
+                            <li><a href="#">Sản phẩm</a></li>
+                            <li><a href="#">Sự kiện</a></li>
+                            <li><a href="#">Tin tức</a></li>
+                            <li><a href="#" data-bs-toggle="modal" data-bs-target="#myModal">Liên hệ</a></li>
+                        </ul>
+                    </nav>
+            </header>
+
+            <!-- The Modal -->
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+  
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">LIÊN HỆ</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+  
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <form action="/action_page.php">
+                                <div class="mb-3">
+                                    <label for="email">Email:</label>
+                                    <input type="email" class="form-control" id="email" placeholder="nhập email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password">Password:</label>
+                                    <input type="password" class="form-control" id="password" placeholder="nhập mật khẩu email" maxlength="10" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="txt">Opinion:</label>
+                                    <textarea class="form-control" id="txt" placeholder="nhập nội dung góp ý" maxlength="400"></textarea>
+                                </div>
+                            </form>
+                        </div>
+  
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Gửi</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Đóng</button>
+                        </div>
+  
+                    </div>
+                </div>
+            </div>
+
+            <section class="ads">
+                <div class="ads-left">
+                    <h4>quảng cáo</h4>
+                </div>
+                <div class="ads-right">
+                    <h4>quảng cáo</h4>
+                </div>
+            </section>
+
+            <section class="content">
+                <section class="banner">
+                    <!-- Carousel -->
+                    <div id="demo" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        </div>
+                    
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/sale.png" alt="Los Angeles" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/bear.png" alt="Chicago" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/tet-holiday.png" alt="New York" class="d-block w-100">
+                            </div>
+                        </div>
+                    
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </section>
+    
+                <section class="subject">
+                    <h1 class="bg-success text-white">Chào mừng bạn đến với trang mua sắm trực tuyến - Tiki</h1>
+                </section>
+
+                <section class="introduce">
+                    <h1 class="underline">Cách đổi/trả sản phẩm do Tiki giao thiếu/sai sản phẩm</h1>
+                    <p>Khi nhận được sản phẩm giao sai hoặc thiếu so với đơn hàng đã đặt, quý khách vui lòng phản hồi lại cho Tiki trong 7 ngày kể từ lúc đơn hàng giao tới và sản phẩm cần được đảm bảo giữ nguyên chưa qua sử dụng.</p>
+                    <p>Trường hợp, quá hạn đổi trả do lỗi nhà cung cấp hoặc đơn hàng đã có biên bản đồng kiểm giữa bên vận chuyển và quý khách, Tiki sẽ không đồng ý gửi bù/đổi/trả sản phẩm trong mọi điều kiện. Để đảm bảo quyền lợi khách hàng và Tiki có cơ sở làm việc với các bộ phận liên quan, tất cả yêu cầu đổi/ trả/ bảo hành quý khách cần cung cấp hình ảnh/clip sản phẩm lỗi. Quá thời gian đổi/ trả sản phẩm nếu chưa nhận được đủ hình ảnh/ clip từ quý khách, Tiki xin phép từ chối hỗ trợ.</p>
+                    <div class="items">
+                        <div class="item">
+                            <div>
+                                <img src="images/sach1.jpg" alt="avt trăm năm">
+                                <h4>Nếu biết trăm năm là hữu hạn</h4>
+                                <p>Nếu Biết Trăm Năm Là Hữu Hạn, đưa người đọc đến nhiều tầng của cung bậc cảm xúc, đến nhiều không gian tưởng chừng ta không thể quay về.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <img src="images/sach2.jpg" alt="avt gieo trồng">
+                                <h4>Gieo trồng hạnh phúc</h4>
+                                <p>Chánh Niệm là nguồn năng lượng tỉnh thức đưa ta trở về với giây phút hiện tại và giúp ta tiếp xúc sâu sắc với sự sống trong mỗi phút giây của đời sống hằng ngày. Chúng ta không cần phải đi đâu xa để thực tập chánh niệm. Chúng ta có thể thực tập chánh niệm ngay trong phòng mình hoặc trên đường đi từ nơi này đến nơi khác. Ta vẫn có thể tiếp tục làm những công việc ta thường làm hằng ngày như đi, đứng, nằm, ngồi, làm việc, ăn, uống, giao tiếp, chuyện trò… nhưng với ý thức là mình đang làm những công việc ấy. Hãy tưởng tượng ta đang ngắm mặt trời mọc với một số người. Trong khi những người khác đang thưởng thức khung cảnh đẹp đẽ ấy thì ta lại “bận rộn” với những thứ trong đầu mình. Ta bận rộn và lo lắng cho những kế hoạch của ta. Ta nghĩ về quá khứ hoặc tương lai mà không thực sự có mặt để trân quý cơ hội đó. Thay vì thưởng thức cảnh đẹp của buổi bình minh, ta lại để cho những khoảnh khắc quý giá ấy trôi qua oan uổng. Nếu quả thực như vậy, ta có thể sử dụng một phương pháp khác. Mỗi khi tâm ta đi lang thang thì ta kéo tâm về và tập trung tâm ý vào hơi thở vào - ra</p>                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <img src="images/sach3.jpg" alt="avt trăm năm">
+                                <h4>Nhà giả kim</h4>
+                                <p>Tiểu thuyết Nhà giả kim của Paulo Coelho như một câu chuyện cổ tích giản dị, nhân ái, giàu chất thơ, thấm đẫm những minh triết huyền bí của phương Đông. Trong lần xuất bản đầu tiên tại Brazil vào năm 1988, sách chỉ bán được 900 bản. Nhưng, với số phận đặc biệt của cuốn sách dành cho toàn nhân loại, vượt ra ngoài biên giới quốc gia, Nhà giả kim đã làm rung động hàng triệu tâm hồn, trở thành một trong những cuốn sách bán chạy nhất mọi thời đại, và có thể làm thay đổi cuộc đời người đọc.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div>
+                                <img src="images/smartwatch.jpg" alt="avt trăm năm">
+                                <h4>Đồng hồ thông minh</h4>
+                                <p>Đồng Hồ Thông Minh AMA Watch S2 thiết bị tầm trung nhưng sở hữu nhiều công nghệ và và tính năng hiện đại</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="product">
+                    <h1 class="underline">SẢN PHẨM TRÊN TIKI</h1>
+                    <div class="product-items">
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="images/sach1.jpg" alt="image1">
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="images/sach2.jpg" alt="image1">
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="images/sach3.jpg" alt="image1">
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="images/smartwatch.jpg" alt="image1">
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="images/tree1.jpg" alt="image1">
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <div class="product-img">
+                                <img src="images/tree2.jpg" alt="image1">
+                            </div>
+                        </div>
+                      
+                    </div>
+                </section>
+
+                <section class="stats">
+                    <div class="stat">
+                        <h1>&gt; 60</h1>
+                        <h4>TỈNH THÀNH</h4>
+                    </div>
+                    <div class="stat">
+                        <h1>&gt; 900</h1>
+                        <h4>KHÁCH HÀNG CÁ NHÂN</h4>
+                    </div>
+                    <div class="stat">
+                        <h1>&gt; 167</h1>
+                        <h4>ĐẠI LÝ CẢ NƯỚC</h4>
+                    </div>
+                    <div class="stat">
+                        <h1>&gt; 1000</h1>
+                        <h4>SẢN PHẨM BÁN CHẠY</h4>
+                    </div>  
+                </section>
+
+                <section class="videos">
+                    <h1 class="underline">Châu Thị Mỹ Lan</h1>
+                    <div class="video">
+                        <div class="video-item">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/yYvA4mjacIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-item">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/tCQ6gE6opmg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="video-item">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/y8plRsCXe2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </body>
+    </html>
